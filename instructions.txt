@@ -1,0 +1,12 @@
+ex 1. moving the data to where it needs to be
+	A. start with sales.vue, you'll find most of the file is already built out for you populate the FE elements with data from the prop
+	B. move on to consultants.vue, for this component you'll need to add an object to callbox.vue and pass it throuogh to consultants as a prop 
+	C. finally on to support.vue, here you'll have the opportunity to built your own component completely from scratch. try not to copy annd paste one of the other examples
+
+ex 2. displaying things where they're needed
+	A. note the buttons at the top of callbox.vue, lets add some of vue's @click functions to them
+	B. simliarly to how dev is displayed, we'll use a datapoint in local state to determine what we want to display
+
+ex 3. lifecycle
+	A. take a look at the devs component, note the created and destroyed functions , open the console and toggle the dev button a few times, the lifecycle methods should fire
+	B. Vue has several lifecycle methods: beforeCreate, created, beforeMount, mounted, beforeUpdate, updated, beforeDestrory, and destroyed try adding a lifecycle method to one of the other components

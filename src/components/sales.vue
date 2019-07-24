@@ -1,0 +1,50 @@
+<template>
+  <div class="main">
+        <div v-bind:key="person.name" class="person" v-for='person in workers'>
+        <div :key="person.name" class="name"> 
+          {{person.name}}
+        </div>
+        <div :key='person.job' class="job">
+          {{person.job}}
+        </div>
+        </div>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'sales', 
+  props: ['workers'],
+	data: function () {
+    return {
+     
+    }
+  },
+  created: function () {
+    console.log('sales are created')
+  },
+  destroyed: function () {
+    console.log('sales are destoryed')
+  }
+}
+</script>
+
+
+<style scoped>
+.name{
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+}
+.job{
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+.person{
+  display: block;
+  margin-bottom: 50px;
+}
+
+</style>
