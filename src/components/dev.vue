@@ -12,7 +12,7 @@
 </template>
 
 <script>
-
+import { exampleMixin } from '../mixins'
 export default {
   name: 'devs', 
   props: ['workers'],
@@ -21,6 +21,7 @@ export default {
     
     }
   },
+  mixins: [exampleMixin],
   created: function () {
     console.log('devs are created')
   },
