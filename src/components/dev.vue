@@ -24,6 +24,7 @@ export default {
   mixins: [exampleMixin],
   created: function () {
     console.log('devs are created')
+
   },
   destroyed: function () {
     console.log('devs are destoryed')
