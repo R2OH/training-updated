@@ -23,6 +23,9 @@ export default {
   },
   created: function () {
     console.log('sales are created')
+    this.$parent.$data.localState.devs = false;
+    this.$parent.$data.localState.consultants = false;
+    this.$parent.$data.localState.support = false;
   },
   destroyed: function () {
     console.log('sales are destoryed')

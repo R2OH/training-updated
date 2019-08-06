@@ -14,19 +14,22 @@
 <script>
 
 export default {
-    name: 'support',
-    props:['workers'],
-    data: function () {
-        return {
+  name: 'support',
+  props:['workers'],
+  data: function () {
+      return {
 
-        }
-    },
-    created: function () {
-        console.log('supporters are created')
-    },
-    destroyed: function () {
-        console.log('supporters are destroyed')
-    }
+      }
+  },
+  created: function () {
+    console.log('supporters are created')
+    this.$parent.$data.localState.sales = false;
+    this.$parent.$data.localState.consultants = false;
+    this.$parent.$data.localState.devs = false;
+  },
+  destroyed: function () {
+      console.log('supporters are destroyed')
+  }
 }
 </script>
 

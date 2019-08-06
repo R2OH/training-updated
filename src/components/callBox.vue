@@ -158,36 +158,24 @@ export default {
   methods: {
     showDevs: function () {
       this.localState.devs = true;
-      this.localState.sales = false;
-      this.localState.consultants = false;
-      this.localState.support = false;
     },
     hideDevs: function () {
       this.localState.devs = false;
     },
     showSupport: function () {
       this.localState.support = true;
-      this.localState.sales = false;
-      this.localState.consultants = false;
-      this.localState.devs = false;
     },
     hideSupport: function () {
       this.localState.support = false;
     },
     showConsultants: function () {
       this.localState.consultants = true;
-      this.localState.sales = false;
-      this.localState.devs = false;
-      this.localState.support = false;
     },
     hideConsultants: function () {
       this.localState.consultants = false;
     },
     showSales: function () {
       this.localState.sales= true;
-      this.localState.devs=false;
-      this.localState.consultants = false;
-      this.localState.support = false;
     },
     hideSales: function () {
      this.localState.sales= false;

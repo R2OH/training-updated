@@ -23,6 +23,9 @@ export default {
   },
   created: function () {
     console.log('consultants are created')
+    this.$parent.$data.localState.sales = false;
+    this.$parent.$data.localState.devs = false;
+    this.$parent.$data.localState.support = false;
   },
   destroyed: function () {
     console.log('consultants are destoryed')

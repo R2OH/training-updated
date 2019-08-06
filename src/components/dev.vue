@@ -24,7 +24,9 @@ export default {
   mixins: [exampleMixin],
   created: function () {
     console.log('devs are created')
-
+    this.$parent.$data.localState.sales = false;
+    this.$parent.$data.localState.consultants = false;
+    this.$parent.$data.localState.support = false;
   },
   destroyed: function () {
     console.log('devs are destoryed')
