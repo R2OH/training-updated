@@ -3,28 +3,28 @@
     hello callbox
     <div class="buttonRow">
         <div v-if='!localState.devs' class="button" @click='showDevs'>
-          Show Devs
+          <p>Show Devs</p>
         </div>
         <div v-if='localState.devs' class="button" @click='hideDevs'>
-          hide Devs
+          <p>hide Devs</p>
         </div>
        <div v-if='!localState.sales' class="button" @click='showSales'>
-          Show Sales
+          <p>Show Sales</p>
         </div>
         <div v-if='localState.sales' class="button" @click='hideSales'>
-          hide Sales
+          <p>hide Sales</p>
         </div>
         <div v-if='!localState.consultants' class="button" @click='showConsultants'>
-          Show Consultants
+          <p>Show Consultants</p>
         </div>
         <div v-if='localState.consultants' class="button" @click='hideConsultants'>
-          hide Consultants
+          <p>hide Consultants</p>
         </div>
         <div v-if='!localState.support' class="button" @click='showSupport'>
-          Show Support
+          <p>Show Support</p>
         </div>
         <div v-if='localState.support' class="button" @click='hideSupport'>
-          hide Support
+          <p>hide Support</p>
         </div>
         
     </div>
@@ -216,5 +216,27 @@ export default {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 400px;
+}
+/* mobile */
+@media screen and (max-width: 455px){
+  .buttonRow{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .button{
+    max-height: 50px;
+    max-width: 100%;
+    text-align: center;
+    min-height: 30px;
+  }
+}
+/* tablet */
+@media screen and (min-width: 455px){
+  .buttonRow{
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 </style>

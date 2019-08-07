@@ -50,5 +50,15 @@ export default {
   display: block;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1000px) and (min-width: 900px){
+  .name{
+    color: red;
+  }
+}
 
+@media screen and (max-width: 1000px) and (min-width: 900px){
+  .name{
+    color: red;
+  }
+}
 </style>
