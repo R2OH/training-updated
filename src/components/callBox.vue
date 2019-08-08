@@ -3,30 +3,29 @@
     <img class="logo" src="..\assets\cbLogo\cbwidegray.png">
     <div class="buttonRow">
         <div v-if='!localState.devs' class="button" @click='showDevs'>
-          <p>Show Devs</p>
+          <p class="buttonText">Show Devs</p>
         </div>
         <div v-if='localState.devs' class="button" @click='hideDevs'>
-          <p>hide Devs</p>
+          <p class="buttonText">Hide Devs</p>
         </div>
        <div v-if='!localState.sales' class="button" @click='showSales'>
-          <p>Show Sales</p>
+          <p class="buttonText">Show Sales</p>
         </div>
         <div v-if='localState.sales' class="button" @click='hideSales'>
-          <p>hide Sales</p>
+          <p class="buttonText">Hide Sales</p>
         </div>
         <div v-if='!localState.consultants' class="button" @click='showConsultants'>
-          <p>Show Consultants</p>
+          <p class="buttonText">Show Consultants</p>
         </div>
         <div v-if='localState.consultants' class="button" @click='hideConsultants'>
-          <p>hide Consultants</p>
+          <p class="buttonText">Hide Consultants</p>
         </div>
         <div v-if='!localState.support' class="button" @click='showSupport'>
-          <p>Show Support</p>
+          <p class="buttonText">Show Support</p>
         </div>
         <div v-if='localState.support' class="button" @click='hideSupport'>
-          <p>hide Support</p>
+          <p class="buttonText">Hide Support</p>
         </div>
-        
     </div>
     <div class="peopleContainer">
           <devs v-if='localState.devs' v-bind:workers='this.people.hackerFarmers'/>
@@ -187,10 +186,10 @@ export default {
 .buttonRow{
   display: block;
   background-color: #0cbe7d;
-  padding-top: 20px;
+  /* padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 5%; */
 }
 .button{
   display: inline-block;
@@ -200,8 +199,8 @@ export default {
   border-color: white;
   border-width: 2px;
   cursor: pointer;
-  margin-left: 5%;
-  margin-right: 5%;
+  /* margin-left: 5%;
+  margin-right: 5%; */
   border-radius: 5px;
   transition: .2s ease;
 }
@@ -227,15 +226,16 @@ export default {
 /* mobile */
 @media screen and (max-width: 455px){
   .buttonRow{
-    background-color: red;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin:0%;
+    padding:0%;
+    border: 5px solid green;
   }
   .button{
-    max-height: 50px;
-    max-width: 100%;
-    text-align: center;
-    min-height: 30px;
+    border: 5px solid green;
+    border-collapse: collapse;
+    margin:10%;
   }
 }
 /* tablet */
