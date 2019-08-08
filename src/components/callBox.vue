@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    hello callbox
+    <img class="logo" src="..\assets\cbLogo\cbwidegray.png">
     <div class="buttonRow">
         <div v-if='!localState.devs' class="button" @click='showDevs'>
           <p>Show Devs</p>
@@ -216,6 +216,13 @@ export default {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 400px;
+}
+.logo {
+  margin: auto 0;
+  max-width: 50%
+}
+.main {
+  max-width: 100%;
 }
 /* mobile */
 @media screen and (max-width: 455px){
