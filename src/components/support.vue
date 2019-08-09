@@ -36,18 +36,18 @@ export default {
 
 <style scoped>
 .name{
-    display: inline-block;
-    width: 200px;
-    text-align: left;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
 }
 .job{
-    display: inline-block;
-    width: 200px;
-    text-align: right;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
 }
 .person{
-    display: block;
-    margin-bottom: 50px;
+  display: flex;
+  margin: 5% 5% 20% 7%;
 }
 
 </style>

@@ -38,17 +38,17 @@ export default {
 <style scoped>
 .name{
   display: inline-block;
-  width: 200px;
+  width: 100%;
   text-align: left;
 }
 .job{
   display: inline-block;
-  width: 200px;
+  width: 100%;
   text-align: right;
 }
 .person{
-  display: block;
-  margin-bottom: 50px;
+  display: flex;
+  margin: 5% 5% 20% 7%;
 }
 @media screen and (max-width: 1000px) and (min-width: 900px){
   .name{
