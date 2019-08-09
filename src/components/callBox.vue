@@ -217,7 +217,7 @@ export default {
   height: 400px;
 }
 .logo {
-  margin: auto 0;
+  margin: 5% 0;
   max-width: 50%
 }
 .main {
@@ -226,24 +226,32 @@ export default {
 /* mobile */
 @media screen and (max-width: 455px){
   .buttonRow{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
     margin:0%;
     padding:0%;
-    border: 5px solid green;
+    border: 5px solid #0cbe7d;
   }
   .button{
-    border: 5px solid green;
+    display: flex;
+    border: 5px solid white;
     border-collapse: collapse;
-    margin:10%;
+    margin:5%;
+    padding:4%;
+    position: relative;
+  }
+  .buttonText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:0%;
   }
 }
 /* tablet */
 @media screen and (min-width: 455px){
   .buttonRow{
     background-color: blue;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
   }
 }
 </style>
