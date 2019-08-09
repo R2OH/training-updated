@@ -38,12 +38,12 @@ export default {
 .name{
   display: inline-block;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 .job{
   display: inline-block;
   width: 100%;
-  text-align: right;
+  text-align: center;
 }
 .person{
   display: flex;

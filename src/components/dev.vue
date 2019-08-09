@@ -39,16 +39,16 @@ export default {
 .name{
   display: inline-block;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 .job{
   display: inline-block;
   width: 100%;
-  text-align: right;
+  text-align: center;
 }
 .person{
   display: flex;
-  margin: 5% 5% 20% 7%;
+  margin: 5% 5% 0% 7%;
 }
 @media screen and (max-width: 1000px) and (min-width: 900px){
   .name{
